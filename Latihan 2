@@ -1,0 +1,35 @@
+####Latihan Kedua – Tugas I####
+Rerata tinggi badan 165 dan simpangan baku 15.
+y=rnorm(1000, 165, 15)
+ View(y) 
+hist(y)
+ y
+
+Rerata nilai IPK mhs 3.12 dan simpangan baku 0.25.
+t=rnorm(1000, 3.12, 0.25) 
+View(t)
+ hist(t)
+ t
+
+####Latihan Ketiga – Tugas II####
+Jika dipilih secara acak seorang mahasiswa, berapa peluang tingginya kurang dari 150cm?
+pnorm(150,165,6)
+
+Berapa peluang menemukan seorang mhs yang tingginya lebih dari 170 cm?
+1-pnorm(170,165,6)
+
+Jika dipilih 7 orang mahasiswa, berapa peluang terdapat 2 mahasiswa atau kurang yang tingginya antara 150 dan 180 cm?
+pnorm(180, 165,6) - pnorm(150, 165,6) dbinom(0,7,0.9875807)+dbinom(1,7,0.9875807)+dbinom(2,7,0.9875807) pbinom(2, 7, 0.9875807)
+
+
+####Latihan Keempat – Tugas III#####
+Agus berencana ke Bandung esok hari lewat tol cipularang. Berapakah peluang waktu perjalanan yang ditempuh Agus berkisar 125 hingga 158 menit?
+pnorm(158, 175,30) - pnorm(125, 175,30)
+
+Berapakah pula peluang waktu perjalanan Agus tersebut dapat lebih dari 2,5 jam? (Gunakan distribusi Normal menggunakan R dan juga perhitungan manual menggunakan tabel Normal Baku).
+pnorm(150,175,30,lower.tail = FALSE)
+
+
+
+
+
